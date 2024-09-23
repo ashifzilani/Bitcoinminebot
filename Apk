@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Mining App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .stats {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 300px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Mining Stats</h1>
+    <div class="stats">
+        <p>Current Hash Rate: <span id="hashrate">N/A</span></p>
+        <p>Balance: <span id="balance">N/A</span></p>
+    </div>
+    <script>
+        // Fetch live stats via API or display dummy data
+        document.getElementById("hashrate").textContent = "120 TH/s";
+        document.getElementById("balance").textContent = "0.0034 BTC";
+    </script>
+</body>
+</html>
